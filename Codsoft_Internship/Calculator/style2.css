@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #89d4cf, #6e45e2);
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: #1e1e2f;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    padding: 20px;
+}
+
+.display {
+    background: #151522;
+    color: white;
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    min-height: 70px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+    background: #3e3e56;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: scale(0.95);
+}
+
+.operator {
+    background: #536dfe;
+}
+
+.operator:active {
+    background: #4559c4;
+}
+
+.clear {
+    background: #ff5252;
+}
+
+.clear:active {
+    background: #e64848;
+}
+
+.equal {
+    grid-column: span 2;
+    background: #29b6f6;
+}
+
+.equal:active {
+    background: #1f8bb3;
+}
+
+/* Image Styling */
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.calculator-image {
+    width: 300px;
+    border-radius: 8px;
+}
